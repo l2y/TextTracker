@@ -1,1 +1,1 @@
-Tearaway,20,0,0,0;Dark Souls,20,0,0,0;Kingdom Hearts II,50,29,9,2013;Demon Souls,15,9,12,2003;Final Fantasy,10,0,0,0;
+Killzone: Mercenary,40,0,0,0;Kingdome Hearts III,60,29,12,2099;The Binding of Isaac,5,0,0,0;Tales of Symphonia Chronicles,40,0,0,0;Tearaway,40,0,0,0;

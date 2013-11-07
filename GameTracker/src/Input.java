@@ -5,24 +5,32 @@ import static java.lang.System.*;
 public class Input {
 	public static boolean start() throws Throwable {
 		
-		int option;
+		int option = 0;
 		Scanner scan = new Scanner(System.in);
 		
 		out.println("What would you like to do?");
-		out.println ("R >> Reset File");
-		out.println ("S >> Show Current File");
-		out.println ("N >> Add New Game to File");
-		option = Integer.parseInt(scan.nextLine());
+		out.println ("1 >> Reset file");
+		out.println ("2 >> Show current file");
+		out.println ("3 >> Add new game to file");
+		out.println ("4 >> Sort the file into alphabetical order");
+		
+		if (scan.hasNextInt()) {
+			option = scan.nextInt();
+			scan.nextLine();
+		}
 		
 		switch (option) {
-		case 1: option = Integer.parseInt("R");
+		case 1: 
 			Games.reset();
 			break;
-		case 2: option = Integer.parseInt("S");
+		case 2:
 			Games.viewList();
 			break;
-		case 3: option = Integer.parseInt("N");
+		case 3:
 			Input.enterGame();
+			break;
+		case 4: 
+			Games.sortList();
 			break;
 		}
 		
